@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Paquetes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Paquetes</h1>
+        <form id="packageForm">
+            <label for="packageId">ID del Paquete:</label>
+            <input type="text" id="packageId" required>
+
+            <label for="action">Acción:</label>
+            <select id="action" required>
+                <option value="">Seleccione una acción</option>
+                <option value="recibir">Recibir</option>
+                <option value="retirar">Retirar</option>
+            </select>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h2>Registro de Acciones</h2>
+        <ul id="log"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
